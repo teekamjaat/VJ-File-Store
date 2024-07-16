@@ -28,7 +28,9 @@ def is_enabled(value, default):
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
-      
+#AUTH CHANNEL 
+AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
+
 # Owner Information
 API_ID = int(environ.get("API_ID", "22349465"))
 API_HASH = environ.get("API_HASH", "3732e079c4125690226d8e7b4e028ca4")
