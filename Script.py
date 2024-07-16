@@ -11,12 +11,13 @@ class script(object):
 # Ask Doubt on telegram @KingVJ01
 
     
-    CAPTION = """<b>📂: @TJ_BOTS {file_name}
+    CAPTION = """<b><H3>JION OUR THIS CHANNEL OF MONEY EARNING</H3>
 
-sɪᴢᴇ ⚙️: {file_size}
-Jᴏɪɴ [ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ](https://t.me/Money_earning_1k)
-Jᴏɪɴ [ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ](https://t.me/Money_earning_1k)
-Jᴏɪɴ [ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ](https://t.me/Money_earning_1k)</b>""" 
+[JION OUR THIS CHANNEL OF MONEY EARNING](https://t.me/Money_earning_1k)
+[JION OUR THIS CHANNEL OF MONEY EARNING](https://t.me/Money_earning_1k)
+https://t.me/Money_earning_1k
+https://t.me/Money_earning_1k
+https://t.me/Money_earning_1k</b>""" 
 
 
 
