@@ -35,10 +35,12 @@ API_HASH = environ.get("API_HASH", "3732e079c4125690226d8e7b4e028ca4")
 ADMINS = int(environ.get("ADMINS", "5469498838"))
 
 # Database Information
-CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
-CDB_NAME = environ.get("CDB_NAME", "clonevjbotz")
-DB_URI = environ.get("DB_URI", "")
-DB_NAME = environ.get("DB_NAME", "vjbotz")
+CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://teekam_jaat:9571404334@cluster0.1tjppgv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+")
+CDB_NAME = environ.get("CDB_NAME", "clonetjbots")
+DB_URI = environ.get("DB_URI", "mongodb+srv://teekam_jaat:9571404334@cluster0.1tjppgv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+")
+DB_NAME = environ.get("DB_NAME", "tjbots")
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -55,7 +57,7 @@ AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Second
 
 # Channel Information
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001786924542"))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001786924542')).split()]
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -79,7 +81,7 @@ class Var(object):
     name = str(getenv('name', 'filetolinkvjbot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', ''))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001786924542'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
