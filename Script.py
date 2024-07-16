@@ -14,10 +14,10 @@ class script(object):
     CAPTION = """<b>📂: @TJ_BOTS {file_name}
 
 sɪᴢᴇ ⚙️: {file_size}
-
+Jᴏɪɴ [ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ](https://t.me/Money_earning_1k)
+Jᴏɪɴ [ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ](https://t.me/Money_earning_1k)
 Jᴏɪɴ [ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ](https://t.me/Money_earning_1k)</b>""" 
-https://t.me/Money_earning_1k
-https://t.me/Money_earning_1k
+
 
 
 # Don't Remove Credit Tg - @VJ_Botz
