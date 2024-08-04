@@ -29,7 +29,7 @@ def is_enabled(value, default):
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 #AUTH CHANNEL 
-AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002137388056 -1002028848173').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
+AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002137388056 -1002204794830').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
 
 # Owner Information
 API_ID = int(environ.get("API_ID", "22349465"))
