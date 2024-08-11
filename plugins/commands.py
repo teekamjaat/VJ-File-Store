@@ -142,7 +142,7 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             try:
-                h = await message.reply_text(f"</b>This Msg  will be deleted in <b><u>{AUTO_DELETE} minutes</b>")
+                h = await message.reply_text(f"</b>This Msg  will be deleted in <b><u>{AUTO_DELETE} minutes</u></b>")
                 k = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
