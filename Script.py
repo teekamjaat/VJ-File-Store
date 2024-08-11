@@ -11,11 +11,7 @@ class script(object):
 # Ask Doubt on telegram @KingVJ01
 
     
-    CAPTION = """<b><H2>JION OUR THIS CHANNEL OF MONEY EARNING</H2>
-
-https://t.me/Money_earning_1k
-https://t.me/Money_earning_1k
-https://t.me/Money_earning_1k</b>""" 
+    CAPTION = """<b>@TJ_BOTS {file_name}</b>""" 
 
 
 
