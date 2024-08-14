@@ -11,7 +11,7 @@ class script(object):
 # Ask Doubt on telegram @KingVJ01
 
     
-    CAPTION = """<b>@TJ_BOTS\n\n{file_name}</b>""" 
+    CAPTION = """<b>@TJ_BOTS{file_name}</b>""" 
 
 
 
