@@ -85,7 +85,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Money_earning_1k')
+            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+ibiCdUKkVes5ODE1')
             ],[
             InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/TJ_BOTS_SUPPORT'),
             InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Tj_bots')
@@ -363,7 +363,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Money_earning_1k')
+            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+ibiCdUKkVes5ODE1')
             ],[
             InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/https://t.me/TJ_BOTS_SUPPORT'),
             InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/tj_bots')
