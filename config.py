@@ -20,11 +20,11 @@ def is_enabled(value, default):
 # Bot Information
 API_ID = int(environ.get("API_ID", "22349465"))
 API_HASH = environ.get("API_HASH", "3732e079c4125690226d8e7b4e028ca4")
-BOT_TOKEN = environ.get("BOT_TOKEN", "7270727975:AAGsS9QAPwDOpeWAeAtl_6ggwEAVABGMRDc")
+BOT_TOKEN = environ.get("BOT_TOKEN", "me7270727975:AAF1nsvG_8g4piaDDIRSuS0UO_v3wq9hfHk")
 
-PICS = (environ.get('PICS', 'https://envs.sh/my-.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://envs.sh/tye.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5469498838').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "Hot_Girl_Pornbot") # without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "TJ_FILE_STORE_BOT") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
@@ -35,7 +35,7 @@ CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
 CDB_NAME = environ.get("CDB_NAME", "clonetechvj")
 
 # Database Information
-DB_URI = environ.get("DB_URI", "mongodb+srv://hotgirl:hotgirl@hotgirl.pnmqt.mongodb.net/?retryWrites=true&w=majority&appName=Hotgirl")
+DB_URI = environ.get("DB_URI", "mongodb+srv://TJ_FILE_STORE_BOT:teekam@tjfilestore.uks7g.mongodb.net/?retryWrites=true&w=majority&appName=Tjfilestore")
 DB_NAME = environ.get("DB_NAME", "tjbot")
 
 # Auto Delete Information
@@ -59,8 +59,8 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "speedlinkurl.com") # shortlink domain without https://
-SHORTLINK_API = environ.get("SHORTLINK_API", "bec9ce4b25695c1c7539b44dc8983ab5f54b1320") # shortlink api
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "indiaearnx.com") # shortlink domain without https://
+SHORTLINK_API = environ.get("SHORTLINK_API", "b4cea4f03a81aca4333d1f5ab412ad4f815a6ccb") # shortlink api
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/How_To_Download_Movie_Video/7") # how to open link 
 
 # Website Info:
@@ -70,7 +70,7 @@ WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', False)) # Set True or Fa
 WEBSITE_URL = environ.get("WEBSITE_URL", "") # For More Information Check Video On Yt - @Tech_VJ
 
 # File Stream Config
-STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
+STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or False
 
 # If Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 MULTI_CLIENT = False
