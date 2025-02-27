@@ -4,7 +4,7 @@
 
 
 class script(object):
-    START_TXT = """<b>ʙᴀʙʏ {},👅💋 ɪ ʟᴏᴠᴇ ʏᴏᴜ 💋💦\n\nᴊᴜsᴛ ᴊɪᴏɴ ᴍʏ ɢʀᴏᴜᴘ ᴛᴏ xxx ᴡɪᴛʜ ᴍᴇ\n\nhttps://t.me/+XOEOkNUSDzpjMmVl\nhttps://t.me/+XOEOkNUSDzpjMmVl</b>"""
+    START_TXT = """<b>Hii{}\n\nI am a permenant file store bot and users can access stored messages by using a shareable link given by</b>"""
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -13,9 +13,7 @@ class script(object):
     
     CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {file_name}
 
-⚙️ sɪᴢᴇ : {file_size}
-
-Jᴏɪɴ [ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ](https://t.me/vj_botz)</b>""" 
+⚙️ sɪᴢᴇ : {file_size}</b>""" 
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
