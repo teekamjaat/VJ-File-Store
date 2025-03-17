@@ -24,7 +24,7 @@ AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('
 # Bot Information
 API_ID = int(environ.get("API_ID", "22349465"))
 API_HASH = environ.get("API_HASH", "3732e079c4125690226d8e7b4e028ca4")
-BOT_TOKEN = environ.get("BOT_TOKEN", "7270727975:AAF1nsvG_8g4piaDDIRSuS0UO_v3wq9hfHk")
+BOT_TOKEN = environ.get("BOT_TOKEN", "7270727975:AAHZJos-45vdKL2yDyDi6aMUYytM_lIjYwU")
 
 PICS = (environ.get('PICS', 'https://envs.sh/tye.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5469498838').split()]
