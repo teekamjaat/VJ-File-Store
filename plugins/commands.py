@@ -36,12 +36,7 @@ async def is_subscribed(bot, query, channel):
             btn.append([InlineKeyboardButton(f'Join {chat.title}', url=chat.invite_link)])
         except Exception:
             pass
-
-    # Add two extra fixed channel buttons
-    btn.append([InlineKeyboardButton("Join TJ Mod Backup", url="https://t.me/+7TJrDvsrUzZlNmQ1")])
-    btn.append([InlineKeyboardButton("Join Main Channel", url="https://t.me/+rwlImG4-g75jMjE1")])
-
-    return btn
+            return btn
 
     
 
