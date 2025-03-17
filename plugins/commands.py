@@ -11,7 +11,7 @@ from Script import script
 from plugins.dbusers import db
 from pyrogram import Client, filters, enums
 from plugins.users_api import get_user, update_user_info
-from pyrogram.errors import *
+from pyrogram.errors import UserNotParticipant
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Message
 from utils import verify_user, check_token, check_verification, get_token
 from config import AUTH_CHANNEL
@@ -34,7 +34,7 @@ async def is_subscribed(bot, query, channel):
             await bot.get_chat_member(id, query.from_user.id)
         except UserNotParticipant:
             btn.append([InlineKeyboardButton(f'Join {chat.title}', url=chat.invite_link)])
-        except Exception as e:
+        except Exception:
             pass
 
     # Add two extra fixed channel buttons
