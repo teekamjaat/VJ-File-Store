@@ -34,12 +34,13 @@ async def is_subscribed(bot, query, channel):
         except UserNotParticipant:
             btn.append([
                 InlineKeyboardButton(f'Join {chat.title}', url=chat.invite_link),
-                InlineKeyboardButton('I Joined ✅', callback_data='joined'),
-                InlineKeyboardButton('Refresh 🔄', callback_data='refresh')
+                InlineKeyboardButton("Join TJ Mod Backup", url="https://t.me/+7TJrDvsrUzZlNmQ1"),
+                InlineKeyboardButton("Join Main Channel", url="https://t.me/+rwlImG4-g75jMjE1")
             ])
         except Exception as e:
             pass
     return btn
+
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
