@@ -11,10 +11,10 @@ from Script import script
 from plugins.dbusers import db
 from pyrogram import Client, filters, enums
 from plugins.users_api import get_user, update_user_info
-from pyrogram.errors import UserNotParticipant, ChatAdminRequired, FloodWait
-from pyrogram.types import CallbackQuery, InputMediaPhoto, Message, WebAppInfo, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.errors import ChatAdminRequired, FloodWait
+from pyrogram.types import *
 from utils import verify_user, check_token, check_verification, get_token
-from config import AUTH_CHANNEL 
+from config import *
 import re
 import json
 import base64
@@ -24,18 +24,6 @@ logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
-
-async def is_subscribed(bot, query, channel):
-    btn = []
-    for id in channel:
-        chat = await bot.get_chat(int(id))
-        try:
-            await bot.get_chat_member(id, query.from_user.id)
-        except UserNotParticipant:
-            btn.append([InlineKeyboardButton(f'Join {chat.title}', url=chat.invite_link)])
-        except Exception as e:
-            pass
-    return btn
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
@@ -66,29 +54,16 @@ def formate_file_name(file_name):
 
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
-    if AUTH_CHANNEL:
-        try:
-            btn = await is_subscribed(client, message, AUTH_CHANNEL)
-            if btn:
-                username = (await client.get_me()).username
-                if message.command[1]:
-                    btn.append([InlineKeyboardButton("♻️ Try Again ♻️", url=f"https://t.me/{username}?start={message.command[1]}")])
-                else:
-                    btn.append([InlineKeyboardButton("♻️ Try Again ♻️", url=f"https://t.me/{username}?start=true")])
-                await message.reply_text(text=f"<b>👋 Hello {message.from_user.mention},\n\nPlease join the channel then click on try again button. 😇</b>", reply_markup=InlineKeyboardMarkup(btn))
-                return
-        except Exception as e:
-            print(e)
     username = client.me.username
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🥵 18+ ᴀᴅᴜʟᴛ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+XOEOkNUSDzpjMmVl')
+            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@Tech_VJ')
             ],[
-            InlineKeyboardButton('🔍 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+sBQBAjfyKqM5YWY1'),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+WUxToIDu24liMjVl')
+            InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/vj_bot_disscussion'),
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/vj_botz')
             ],[
             InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
@@ -366,11 +341,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('🥵 18+ ᴀᴅᴜʟᴛ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+XOEOkNUSDzpjMmVl')
-            ],[
-            InlineKeyboardButton('🔍 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/+sBQBAjfyKqM5YWY1'),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+WUxToIDu24liMjVl')
-            ],[
+            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@Tech_VJ')
+        ],[
+            InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/vj_bot_disscussion'),
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/vj_botz')
+        ],[
             InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
