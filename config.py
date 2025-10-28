@@ -22,9 +22,9 @@ API_ID = int(environ.get("API_ID", "22349465"))
 API_HASH = environ.get("API_HASH", "3732e079c4125690226d8e7b4e028ca4")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "tj_file_store_bot") # without @
+PICS = (environ.get('PICS', 'https://envs.sh/r5R.jpg')).split() # Bot Start Picture
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5469498838').split()]
+BOT_USERNAME = environ.get("BOT_USERNAME", "iPopkornbot_1bot") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
